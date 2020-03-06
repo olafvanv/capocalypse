@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capocalypse</title>
+    <link rel="stylesheet" type="text/css" href="../css/officestyle.css">
+</head>
+<body>
+<div class='container' width=900px>    
+    <div class="header">
+    <img class="logo" src="../img/logo.png" alt="capocalypse-logo" />
+  </div>
+
+
+
+
+<p id='demo'></p>
+<div class="game-wrapper">
+    <div class="game-box">
+<div id="facade">
+    <div id="barricade">
+        <img src="../assets/787738_preview_preview.png" width=250px id="couch1">
+        <img src="../assets/unnamed.png" width=250px  id="couch2">
+        <img src="../assets/plank-png-3.png" width=200px id="plank1">
+        <img src="../assets/strip-of-wood-41011_1280.webp" width=200px id="plank2">
+    </div>
+
+</div> 
+<img src="../assets/lotte.png" id="lotte">
+</div>   
+<div class="input-box">
+    <!-- <input class="css-input rock-input" type="text"> -->
+    <div id="editor">
+      <div id="css">
+        <div class="line-numbers">1<br>2<br>3<br>4<br>5<br>6<br>7</div>
+        <pre>#barricade {</pre>
+        <div class="input-row">
+          <pre class="property">flex-flow: </pre>
+          <form id="answer">
+            <input type="field">
+            </form>
+        </div>
+        <pre>}</pre>
+        <button id="try" onclick="getAnswer()">try answer</button>
+      </div>
+  
+  </div>
+</div>
+
+</div></div>
+</body>
+<script> 
+
+function getAnswer(){
+    var ansForm = document.getElementById('answer');
+    var text = "";
+  var i;
+  for (i = 0; i < ansForm.length ;i++) {
+    text += ansForm.elements[i].value   ;
+  }
+    var styleSheet = document.createElement("style");
+    styleSheet.type = "text/css";
+    styleSheet.innerText = `#barricade{ flex-flow:${text}}  `;
+    document.head.appendChild(styleSheet);
+
+    if(text === "row"){
+      var styleSheet = document.createElement("style");
+    styleSheet.type = "text/css";
+    styleSheet.innerText = `#facade{
+    position: absolute;
+    top: 55%;
+}  `;
+    document.head.appendChild(styleSheet);
+    alert("Congratulations! You're safe from the Zomcruiters! You're hired!");
+    }
+
+  };
+
+</script>
+</html>
