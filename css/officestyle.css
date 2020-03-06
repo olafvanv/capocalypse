@@ -47,12 +47,17 @@
     z-index: 300;
   }
 
+  form input{
+    width:100%;
+  }
+
   
   .game-wrapper .input-box {
     background:#251101;
     width:450px;
     padding:20px;
     box-sizing: border-box;
+    color:#fff;
   }
   
   .display-none{
