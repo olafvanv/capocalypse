@@ -1,6 +1,7 @@
 .game-asset  {
   cursor: crosshair;
   position: absolute;
+  transition-duration: .4s;
 }
 
 #key {
@@ -17,3 +18,17 @@
   z-index:2;
 }
 
+#bush {
+  display: block;
+  width:300px;
+  bottom:5px;
+  left:10px;
+  opacity: 1;
+}
+
+#mushroom {
+  display: block;
+  width:100px;
+  top:62%;
+  left:40%;
+}
