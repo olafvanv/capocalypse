@@ -41,6 +41,7 @@
   width:450px;
   padding:20px;
   box-sizing: border-box;
+  color:#fff;
 }
 
 .display-none{
@@ -57,12 +58,12 @@
 }
 
 #css {
-  height: 160px;
+  height: 260px;
   position: relative;
   padding: 10px 10px 10px 40px;
   background-color: #ddd;
   border-radius: 4px;
-  overflow: hidden;
+  overflow:hidden;
 }
 
 #css .input-row {
@@ -78,9 +79,10 @@
   text-align: right;
   background-color: #999;
   color: #D5D5D5;
+  line-height: 1.6;
 }
 
-#code {
+.code {
   display: block;
   width: calc(100% - 16px);
   height: 24px;

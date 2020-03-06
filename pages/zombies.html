@@ -15,18 +15,37 @@
 
     <div class="game-wrapper">
       <div class="game-box">
-        <img id="key" class="game-asset" src="../img/zombie-scene/key.png" onclick="foundKey()"/>
+        <img id="bush" class="game-asset" src="../img/zombie-scene/bush.png" />
         <img id="rock" class="game-asset" src="../img/zombie-scene/rock.png" />
+        <img id="mushroom" class="game-asset" src="../img/zombie-scene/mushroom.png" />
+        <img id="key" class="game-asset" src="../img/zombie-scene/key.png" onclick="foundKey()"/>
       </div>
       <div class="input-box">
-        <input class="css-input rock-input" type="text">
+        <h3>Find the key!</h3>
+        <p>Quick, find the key you must! The Zomcruiters are coming!</p>
+        <p>Hide the elements on the left to find the key to your new career.</p>
         <div id="editor">
           <div id="css">
-            <div class="line-numbers">1<br>2<br>3<br>4<br>5<br>6<br>7</div>
-            <pre>#stone {</pre>
+            <div class="line-numbers">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</div>
+
+            <pre>#bush {</pre>
+            <div class="input-row">
+              <pre class="property">opacity: </pre>
+              <input type="text" id="bush-input" class="code" autofocus="" autocapitalize="none" value="1"></input>;
+            </div>
+            <pre>}</pre>
+
+            <pre>#rock {</pre>
+            <div class="input-row">
+              <pre class="property">right: </pre>
+              <input type="text" id="rock-input" class="code" autofocus="" autocapitalize="none" value="20px"></input>;
+            </div>
+            <pre>}</pre>
+
+            <pre>#mushroom {</pre>
             <div class="input-row">
               <pre class="property">display: </pre>
-              <textarea id="code" autofocus="" autocapitalize="none" style="height: 24px;"></textarea>
+              <input type="text" id="mushroom-input" class="code" autofocus="" autocapitalize="none" value="block"></input>;
             </div>
             <pre>}</pre>
           </div>

@@ -1,15 +1,26 @@
 var rock = document.getElementById('rock');
 var rockInput = document.getElementsByClassName('rock-input');
+var bush = document.getElementById('bush');
+var bushInput = document.getElementsByClassName('bush-input');
+var mush = document.getElementById('mushroom');
+var mushInput = document.getElementsByClassName('mushroom-input');
 
-rockInput = document.addEventListener('input', addClass);
+rockInput = document.getElementById('rock-input').addEventListener('input', function(e) {
+  addStyle(rock, 'right', e.target.value);
+});
 
-function addClass(e) {
-  const val = e.target.value;
-  if(val === 'display: none') {
-    rock.classList.add('display-none');
-  }
+bushInput = document.getElementById('bush-input').addEventListener('input', function(e) {
+  addStyle(bush, 'opacity', e.target.value)
+});
+
+mushInput = document.getElementById('mushroom-input').addEventListener('input', function(e) {
+  addStyle(mush, 'display', e.target.value)
+});
+
+function addStyle(el, prop, val){
+  el.style[prop] = val;
 }
 
 function foundKey() {
-  alert('sleutel gevonden!');
+  window.location.href = '../pages/office.html'
 }
