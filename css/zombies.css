@@ -1,0 +1,97 @@
+.container{
+  width:100%;
+  min-height:100%;
+  background-color: #470024;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header{
+  width:100%;
+  padding:20px;
+  display:flex;
+  justify-content: center;
+}
+
+.header .logo{
+  height:100px;
+}
+
+.game-wrapper{
+  width:100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  height:550px;
+  box-sizing:border-box;
+  background-color:#fff;
+  display: flex;
+}
+
+.game-wrapper .game-box {
+  background: grey;
+  width:900px;
+  position:relative;
+  background-image: url(../img/forest.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game-wrapper .input-box {
+  background:#251101;
+  width:450px;
+  padding:20px;
+  box-sizing: border-box;
+}
+
+.display-none{
+  opacity: 0;
+  pointer-events: none;
+  transition-duration: .5s;
+}
+
+#editor, pre {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #aaa;
+}
+
+#css {
+  height: 160px;
+  position: relative;
+  padding: 10px 10px 10px 40px;
+  background-color: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#css .input-row {
+  display: flex;
+  margin-left: 16px;
+}
+.line-numbers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 10px 6px;
+  text-align: right;
+  background-color: #999;
+  color: #D5D5D5;
+}
+
+#code {
+  display: block;
+  width: calc(100% - 16px);
+  height: 24px;
+  border: none;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+  outline: none;
+  resize: none;
+  overflow: auto;
+}
+
+pre {
+  margin: 0;
+}

@@ -1,0 +1,19 @@
+.game-asset  {
+  cursor: crosshair;
+  position: absolute;
+}
+
+#key {
+  width:50px;
+  right: 30px;
+  bottom: 80px;
+  z-index:1;
+}
+
+#rock {
+  width:70px;
+  right:20px;
+  bottom:70px;
+  z-index:2;
+}
+
