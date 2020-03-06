@@ -1,3 +1,6 @@
+var audio = new Audio('../assets/toto.mp3');
+audio.play();
+
 var rock = document.getElementById('rock');
 var rockInput = document.getElementsByClassName('rock-input');
 var bush = document.getElementById('bush');
