@@ -1,28 +1,48 @@
 .zombie-container {
-    display: flex;
+    width: 100vw;
+    position: relative;
+}
+
+.zombie {
+    position: absolute;
+    top: 0;
 }
 
 .zombie:nth-child(1) {
-    animation: MoveUpDown 1000ms linear infinite;
+    animation: MoveUpDown 1000ms linear infinite, Size 30000ms linear forwards;
+    left: 0px;
 }
 .zombie:nth-child(2) {
-    animation: MoveUpDown 1200ms linear infinite;
+    animation: MoveUpDown 1200ms linear infinite, Size 30000ms linear forwards;
+    left: 250px;
 }
 .zombie:nth-child(3) {
-    animation: MoveUpDown 900ms linear infinite;
+    animation: MoveUpDown 900ms linear infinite, Size 30000ms linear forwards;
+    left: 200px;
 }
 .zombie:nth-child(4) {
-    animation: MoveUpDown 1400ms linear infinite;
+    animation: MoveUpDown 1400ms linear infinite, Size 30000ms linear forwards;
+    left: 300px;
 }
 .zombie:nth-child(5) {
-    animation: MoveUpDown 1000ms linear infinite;
+    animation: MoveUpDown 1000ms linear infinite, Size 30000ms linear forwards;
+    left: 400px;
 }
 
 @keyframes MoveUpDown {
     0%, 100% {
         transform: translateY(0px);
     }
-    50% {
-        transform: translateY(20px);
+    100% {
+        transform: translateY(10px);
     }
-  }
+}
+
+@keyframes Size {
+    0% {
+        width: 200px;
+    }
+    100% {
+        width: 800px;
+    }
+}
