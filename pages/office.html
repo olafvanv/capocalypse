@@ -52,6 +52,9 @@
 </body>
 <script> 
 
+var audio = new Audio('../assets/rammstein.mp3');
+audio.play();
+
 function getAnswer(){
     var ansForm = document.getElementById('answer');
     var text = "";
@@ -72,7 +75,10 @@ function getAnswer(){
     top: 55%;
 }  `;
     document.head.appendChild(styleSheet);
-    alert("Congratulations! You're safe from the Zomcruiters! You're hired!");
+      alert("Congratulations! You're safe from the Zomcruiters! You're hired!");
+      setTimeout(function(){ 
+        window.location.href = '../pages/presentation.html';
+    }, 1500);
     }
 
   };
