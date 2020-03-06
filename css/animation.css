@@ -1,0 +1,28 @@
+.zombie-container {
+    display: flex;
+}
+
+.zombie:nth-child(1) {
+    animation: MoveUpDown 1000ms linear infinite;
+}
+.zombie:nth-child(2) {
+    animation: MoveUpDown 1200ms linear infinite;
+}
+.zombie:nth-child(3) {
+    animation: MoveUpDown 900ms linear infinite;
+}
+.zombie:nth-child(4) {
+    animation: MoveUpDown 1400ms linear infinite;
+}
+.zombie:nth-child(5) {
+    animation: MoveUpDown 1000ms linear infinite;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+  }
